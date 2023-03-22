@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "fabricproxy",
+  "version": "1.4.9",
+  "name": "FabricProxy",
+  "description": "Support forward player data from proxy",
+  "authors": [
+    "james58899"
+  ],
+  "contact": {
+    "homepage": "https://github.com/OKTW-Network/FabricProxy",
+    "sources": "https://github.com/OKTW-Network/FabricProxy"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": []
+  },
+  "mixins": [
+    "common.mixins.json",
+    "bungee.mixins.json",
+    "velocity.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "\u003e\u003d0.11.3",
+    "fabric": "*"
+  },
+  "suggests": {},
+  "jars": [
+    {
+      "file": "META-INF/jars/AutoConfig-1.16-SNAPSHOT.jar"
+    }
+  ]
+}

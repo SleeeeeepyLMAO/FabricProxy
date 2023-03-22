@@ -1,0 +1,72 @@
+{
+  "mappings": {
+    "one/oktw/mixin/bungee/ServerHandshakeNetworkHandlerMixin": {
+      "Lnet/minecraft/server/network/ServerLoginNetworkHandler;\u003cinit\u003e(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/network/ClientConnection;)V": "Lnet/minecraft/class_3248;\u003cinit\u003e(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_2535;)V",
+      "onHandshake": "Lnet/minecraft/class_3246;method_12576(Lnet/minecraft/class_2889;)V"
+    },
+    "one/oktw/mixin/UserCacheMixin": {
+      "Lnet/minecraft/util/UserCache;shouldUseRemote()Z": "Lnet/minecraft/class_3312;method_14514()Z",
+      "findProfileByName": "Lnet/minecraft/class_3312;method_14509(Lcom/mojang/authlib/GameProfileRepository;Ljava/lang/String;)Ljava/util/Optional;"
+    },
+    "one/oktw/mixin/bungee/HandshakeC2SPacketMixin": {
+      "\u003cinit\u003e(Lnet/minecraft/network/PacketByteBuf;)V": "Lnet/minecraft/class_2889;\u003cinit\u003e(Lnet/minecraft/class_2540;)V"
+    },
+    "one/oktw/mixin/ClientConnectionAccessor": {
+      "address": "field_11645:Ljava/net/SocketAddress;"
+    },
+    "one/oktw/mixin/bungee/HandshakeC2SPacketAccessor": {
+      "address": "field_13159:Ljava/lang/String;"
+    },
+    "one/oktw/mixin/bungee/ServerLoginNetworkHandlerMixin": {
+      "Lnet/minecraft/server/MinecraftServer;isOnlineMode()Z": "Lnet/minecraft/server/MinecraftServer;method_3828()Z",
+      "Lnet/minecraft/server/network/ServerLoginNetworkHandler;profile:Lcom/mojang/authlib/GameProfile;": "Lnet/minecraft/class_3248;field_14160:Lcom/mojang/authlib/GameProfile;",
+      "onHello": "Lnet/minecraft/class_3248;method_12641(Lnet/minecraft/class_2915;)V"
+    },
+    "one/oktw/mixin/ServerConfigHandlerMixin": {
+      "Lnet/minecraft/server/MinecraftServer;isOnlineMode()Z": "Lnet/minecraft/server/MinecraftServer;method_3828()Z",
+      "lookupProfile": "Lnet/minecraft/class_3321;method_14538(Lnet/minecraft/server/MinecraftServer;Ljava/util/Collection;Lcom/mojang/authlib/ProfileLookupCallback;)V"
+    },
+    "one/oktw/mixin/velocity/ServerLoginNetworkHandlerMixin": {
+      "Lnet/minecraft/network/ClientConnection;isLocal()Z": "Lnet/minecraft/class_2535;method_10756()Z",
+      "Lnet/minecraft/network/packet/c2s/login/LoginHelloC2SPacket;getProfile()Lcom/mojang/authlib/GameProfile;": "Lnet/minecraft/class_2915;method_12650()Lcom/mojang/authlib/GameProfile;",
+      "onQueryResponse": "Lnet/minecraft/class_3248;method_12640(Lnet/minecraft/class_2913;)V",
+      "onHello": "Lnet/minecraft/class_3248;method_12641(Lnet/minecraft/class_2915;)V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "one/oktw/mixin/bungee/ServerHandshakeNetworkHandlerMixin": {
+        "Lnet/minecraft/server/network/ServerLoginNetworkHandler;\u003cinit\u003e(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/network/ClientConnection;)V": "Lnet/minecraft/class_3248;\u003cinit\u003e(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_2535;)V",
+        "onHandshake": "Lnet/minecraft/class_3246;method_12576(Lnet/minecraft/class_2889;)V"
+      },
+      "one/oktw/mixin/UserCacheMixin": {
+        "Lnet/minecraft/util/UserCache;shouldUseRemote()Z": "Lnet/minecraft/class_3312;method_14514()Z",
+        "findProfileByName": "Lnet/minecraft/class_3312;method_14509(Lcom/mojang/authlib/GameProfileRepository;Ljava/lang/String;)Ljava/util/Optional;"
+      },
+      "one/oktw/mixin/bungee/HandshakeC2SPacketMixin": {
+        "\u003cinit\u003e(Lnet/minecraft/network/PacketByteBuf;)V": "Lnet/minecraft/class_2889;\u003cinit\u003e(Lnet/minecraft/class_2540;)V"
+      },
+      "one/oktw/mixin/ClientConnectionAccessor": {
+        "address": "field_11645:Ljava/net/SocketAddress;"
+      },
+      "one/oktw/mixin/bungee/HandshakeC2SPacketAccessor": {
+        "address": "field_13159:Ljava/lang/String;"
+      },
+      "one/oktw/mixin/bungee/ServerLoginNetworkHandlerMixin": {
+        "Lnet/minecraft/server/MinecraftServer;isOnlineMode()Z": "Lnet/minecraft/server/MinecraftServer;method_3828()Z",
+        "Lnet/minecraft/server/network/ServerLoginNetworkHandler;profile:Lcom/mojang/authlib/GameProfile;": "Lnet/minecraft/class_3248;field_14160:Lcom/mojang/authlib/GameProfile;",
+        "onHello": "Lnet/minecraft/class_3248;method_12641(Lnet/minecraft/class_2915;)V"
+      },
+      "one/oktw/mixin/ServerConfigHandlerMixin": {
+        "Lnet/minecraft/server/MinecraftServer;isOnlineMode()Z": "Lnet/minecraft/server/MinecraftServer;method_3828()Z",
+        "lookupProfile": "Lnet/minecraft/class_3321;method_14538(Lnet/minecraft/server/MinecraftServer;Ljava/util/Collection;Lcom/mojang/authlib/ProfileLookupCallback;)V"
+      },
+      "one/oktw/mixin/velocity/ServerLoginNetworkHandlerMixin": {
+        "Lnet/minecraft/network/ClientConnection;isLocal()Z": "Lnet/minecraft/class_2535;method_10756()Z",
+        "Lnet/minecraft/network/packet/c2s/login/LoginHelloC2SPacket;getProfile()Lcom/mojang/authlib/GameProfile;": "Lnet/minecraft/class_2915;method_12650()Lcom/mojang/authlib/GameProfile;",
+        "onQueryResponse": "Lnet/minecraft/class_3248;method_12640(Lnet/minecraft/class_2913;)V",
+        "onHello": "Lnet/minecraft/class_3248;method_12641(Lnet/minecraft/class_2915;)V"
+      }
+    }
+  }
+}

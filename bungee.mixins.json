@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "one.oktw.mixin.bungee",
+  "compatibilityLevel": "JAVA_16",
+  "plugin": "one.oktw.FabricProxy",
+  "mixins": [
+    "ClientConnectionMixin",
+    "HandshakeC2SPacketAccessor",
+    "HandshakeC2SPacketMixin",
+    "ServerHandshakeNetworkHandlerMixin",
+    "ServerLoginNetworkHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "FabricProxy-refmap.json"
+}

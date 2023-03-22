@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "one.oktw.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "ClientConnectionAccessor",
+    "ServerConfigHandlerMixin",
+    "UserCacheMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "FabricProxy-refmap.json"
+}
